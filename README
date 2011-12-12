@@ -1,0 +1,16 @@
+Same basic crappy API, except a new dialog method for FacebookMobile.
+
+FacebookMobile.dialog(
+	DialogMethods.APP_REQUESTS,
+	function(success:Object, fail:Object):void {
+		// woot!
+	},
+	stage,
+	webview,
+	{
+		title : "Hey!",
+		message : "This is a message.",
+		to : to,
+		max_recipients : 1,
+		method : "apprequests"
+	});
